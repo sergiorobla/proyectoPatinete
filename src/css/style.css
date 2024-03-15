@@ -1,0 +1,284 @@
+/* Estilos generales del cuerpo del documento */
+body {
+  background-color: #f9f9f9; /* Color de fondo */
+  margin: 20px; /* Margen exterior */
+  user-select: none; /* Deshabilita la selección de texto por parte del usuario */
+  background-clip: url(../img/fondo.mp4); /* Define el área de recorte para el fondo del cuerpo */
+  background-position: center; /* Posición del fondo */
+  background-size: cover; /* Tamaño del fondo */
+  background-repeat: no-repeat; /* No repetir el fondo */
+}
+
+/* Estilos para un video de fondo */
+#video-background {
+  position: fixed; /* Fijar la posición del video */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; /* Ancho mínimo del video */
+  min-height: 100%; /* Altura mínima del video */
+  width: auto;
+  height: auto;
+  z-index: -1000; /* Índice z para enviarlo detrás de otros elementos */
+}
+
+/* Estilos para un título con clase "mi-clase-titulo" */
+.mi-clase-titulo {
+  font-family: "Signika", sans-serif; /* Familia de fuentes */
+}
+
+/* Estilos para encabezados dentro de elementos con clase "container" */
+.container h2 {
+  color: #3498db; /* Color del texto */
+  font-size: 25px; /* Tamaño de fuente */
+  font-family: "Signika", sans-serif; /* Familia de fuentes */
+  text-align: center; /* Alineación del texto */
+  background-color: #111; /* Color de fondo */
+  padding: 10px 0px; /* Relleno del elemento */
+  border-radius: 10px; /* Radio de borde */
+  box-shadow: inset 0px 5px 10px #b6b6b6; /* Sombra del cuadro */
+}
+
+/* Estilos para elementos con clase "container" */
+.container {
+  display: flex; /* Mostrar como un contenedor flexible */
+  gap: 15px; /* Espacio entre los elementos hijos */
+  justify-content: center; /* Alinear los elementos hijos al centro */
+}
+
+/* Estilos para elementos con clase "listas" */
+.listas {
+  background-color: #ffffff; /* Color de fondo */
+  border-radius: 10px; /* Radio de borde */
+  padding: 20px; /* Relleno del elemento */
+  width: 45%; /* Ancho del elemento */
+  height: 310px; /* Altura del elemento */
+  box-shadow: 0px 0px 30px #ffffff; /* Sombra del cuadro */
+}
+
+/* Estilos para divs dentro de elementos con clase "listas" */
+.listas div {
+  text-align: center; /* Alineación del texto */
+  font-weight: bold; /* Peso de la fuente */
+  font-family: "Signika", sans-serif; /* Familia de fuentes */
+  text-transform: uppercase;
+}
+
+/* Estilos para el contenedor de botones */
+.button-wrapper {
+  display: flex; /* Mostrar como un contenedor flexible */
+  justify-content: center; /* Alinear los elementos hijos al centro */
+}
+
+/* Estilos para un título */
+.title {
+  margin-bottom: 30px; /* Margen inferior */
+  margin-top: 50px; /* Margen superior */
+  display: flex; /* Mostrar como un contenedor flexible */
+  justify-content: center; /* Alinear los elementos hijos al centro */
+}
+
+/* Estilos para un botón con clase "button-85" */
+.button-85 {
+  margin-top: 30px; /* Margen superior */
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno */
+  color: rgb(255, 255, 255); /* Color del texto */
+  cursor: pointer; /* Cursor al pasar por encima */
+  position: relative; /* Posición relativa */
+  z-index: 0; /* Índice z */
+  border-radius: 10px; /* Radio de borde */
+  user-select: none; /* Deshabilita la selección de texto por parte del usuario */
+  -webkit-user-select: none; /* Deshabilita la selección de texto en navegadores webkit */
+  touch-action: manipulation; /* Define la acción táctil */
+}
+
+/* Estilos para el tamaño de los botones */
+.size {
+  width: 50px; /* Ancho */
+  height: 50px; /* Altura */
+}
+
+/* Estilos para el efecto de fondo de los botones */
+.button-85:after {
+  z-index: -1; /* Índice z */
+  content: ""; /* Contenido generado */
+  position: absolute; /* Posición absoluta */
+  width: 100%; /* Ancho */
+  height: 100%; /* Altura */
+  left: 0; /* Posición izquierda */
+  top: 0; /* Posición superior */
+  border-radius: 10px; /* Radio de borde */
+}
+
+/* Estilos para el efecto de fondo de los botones */
+.button-85:before {
+  content: ""; /* Contenido generado */
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  ); /* Degradado lineal de fondo */
+  position: absolute; /* Posición absoluta */
+  top: -2px; /* Posición superior */
+  left: -2px; /* Posición izquierda */
+  background-size: 400%; /* Tamaño de fondo */
+  z-index: -1; /* Índice z */
+  filter: blur(5px); /* Desenfoque */
+  -webkit-filter: blur(5px); /* Desenfoque en navegadores webkit */
+  width: calc(100% + 4px); /* Ancho calculado */
+  height: calc(100% + 4px); /* Altura calculada */
+  animation: glowing-button-85 20s linear infinite; /* Animación */
+  transition: opacity 0.3s ease-in-out; /* Transición */
+  border-radius: 10px; /* Radio de borde */
+}
+
+/* Animación para el efecto de fondo de los botones */
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0; /* Posición inicial */
+  }
+  50% {
+    background-position: 400% 0; /* Posición intermedia */
+  }
+  100% {
+    background-position: 0 0; /* Posición final */
+  }
+}
+
+/* Estilos para los confetis */
+.confeti {
+  width: 10px; /* Ancho */
+  height: 10px; /* Altura */
+  position: absolute; /* Posición absoluta */
+  animation: confeti-fall 1s linear infinite; /* Animación */
+}
+
+/* Animación para los confetis */
+@keyframes confeti-fall {
+  0% {
+    transform: translateY(-90vh) rotate(0deg); /* Transformación inicial */
+  }
+  100% {
+    transform: translateY(10vh) rotate(360deg); /* Transformación final */
+  }
+}
+
+/* Estilos individuales para cada confeti */
+.confeti:nth-child(1) {
+  left: 5%;
+  animation-delay: 0.2s;
+  background-color: #f00;
+}
+
+.confeti:nth-child(2) {
+  left: 10%;
+  animation-delay: 0.4s;
+  background-color: rgb(0, 102, 255);
+}
+
+.confeti:nth-child(3) {
+  left: 15%;
+  animation-delay: 0.6s;
+  background-color: rgb(0, 255, 55);
+}
+
+.confeti:nth-child(4) {
+  left: 20%;
+  animation-delay: 0.3s;
+  background-color: rgb(255, 0, 179);
+}
+
+.confeti:nth-child(5) {
+  left: 25%;
+  animation-delay: 0.5s;
+  background-color: rgb(234, 255, 0);
+}
+
+.confeti:nth-child(6) {
+  left: 30%;
+  animation-delay: 0.7s;
+  background-color: rgb(255, 170, 0);
+}
+
+.confeti:nth-child(7) {
+  left: 35%;
+  animation-delay: 0.9s;
+  background-color: rgb(0, 255, 247);
+}
+
+.confeti:nth-child(8) {
+  left: 40%;
+  animation-delay: 0.1s;
+  background-color: rgb(187, 255, 0);
+}
+
+.confeti:nth-child(9) {
+  left: 45%;
+  animation-delay: 0.3s;
+  background-color: rgb(195, 0, 255);
+}
+
+.confeti:nth-child(10) {
+  left: 50%;
+  animation-delay: 0.5s;
+  background-color: rgb(132, 255, 0);
+}
+
+.confeti:nth-child(11) {
+  left: 55%;
+  animation-delay: 0.4s;
+  background-color: rgb(0, 26, 255);
+}
+
+.confeti:nth-child(12) {
+  left: 60%;
+  animation-delay: 0.5s;
+  background-color: rgb(0, 255, 85);
+}
+
+.confeti:nth-child(13) {
+  left: 65%;
+  animation-delay: 0.3s;
+  background-color: rgb(255, 0, 217);
+}
+
+.confeti:nth-child(14) {
+  left: 70%;
+  animation-delay: 0.1s;
+  background-color: #f00;
+}
+
+.confeti:nth-child(15) {
+  left: 75%;
+  animation-delay: 0.2s;
+  background-color: rgb(255, 145, 0);
+}
+
+.confeti:nth-child(16) {
+  left: 80%;
+  animation-delay: 0.5s;
+  background-color: rgb(0, 255, 145);
+}
+
+.confeti:nth-child(17) {
+  left: 85%;
+  animation-delay: 0.9s;
+  background-color: rgb(255, 0, 217);
+}
+.confeti:nth-child(18) {
+  left: 90%;
+  animation-delay: 0.3s;
+  background-color: rgb(234, 255, 0);
+}
+.confeti:nth-child(19) {
+  left: 95%;
+  animation-delay: 0.5s;
+  background-color: rgb(21, 255, 0);
+}

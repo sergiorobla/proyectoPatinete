@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Declaración de la codificación de caracteres -->
+    <meta charset="UTF-8" />
+    <!-- Configuración de la vista inicial para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Reto del Patinete</title>
+    <!-- Vinculación de la página -->
+    <link rel="shortcut icon" href="./src/img/skate.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Vinculación al archivo CSS -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body>
+    <video autoplay muted loop id="video-background">
+      <source src="./src/img/fondo.mp4" type="video/mp4" />
+    </video>
+    <!-- Encabezado de la página -->
+    <header>
+      <!-- Logotipo del Patinete con un enlace a la página principal -->
+      <div class="title">
+        <a href="./index.html">
+          <img src="./src/img/sorteo-removebg.png" alt="logo patinete" />
+        </a>
+      </div>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+      <!-- Contenedor principal -->
+      <div class="container">
+        <!-- Lista de participantes -->
+        <div class="listas participantes">
+          <h2>Participantes</h2>
+        </div>
+        <!-- Lista de eliminados -->
+        <div class="listas eliminados">
+          <h2>Eliminados</h2>
+        </div>
+      </div>
+      <!-- Contenedor de botón -->
+      <div class="button-wrapper">
+        <!-- Botón con etiqueta "✖" -->
+        <button class="button-85 size" role="button">❌</button>
+      </div>
+    </main>
+
+    <!-- Pie de página (actualmente vacío) -->
+    <footer></footer>
+
+    <!-- Vinculación al archivo JavaScript -->
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
