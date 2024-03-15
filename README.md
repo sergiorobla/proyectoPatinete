@@ -1,4 +1,4 @@
-# retoPatinete
+# Reto del Sorteo de Patinete
 
 Subdividir el equipo en 2 departamentos: Front || Back.
 
@@ -13,7 +13,7 @@ propiedades serán:
 - Atributo: Participación (booleano) por defecto a true.
 
 
-##Método
+## Método
 
 - Eliminar el Parcipante que dejará el elemento en
 false.
