@@ -55,8 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
           (participante) => participante.participacion
         );
         Swal.fire({
-          icon: "success",
-          title: `¡Enhorabuena ${ultimoParticipante.nombre}, <br /> has Ganado! <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div>`,
+          title: `<br /> ✨🏆✨ <br /> <br />¡Enhorabuena ${ultimoParticipante.nombre}! <br /> <br /> ¡Has Ganado! <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div>`,
           allowOutsideClick: false,
           customClass: {
             title: "mi-clase-titulo",
@@ -90,8 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Mostrar una alerta indicando que el participante ha sido eliminado
         Swal.fire({
-          title: `😢🥀 <br /> ${eliminado.nombre} ha sido eliminad@ <br /> Gracias por participar.`,
-          timer: 4000, // Duración de la alerta en milisegundos (en este caso, 2 segundos)
+          title: `<br /> 😢🥀 <br /> <br /> ${eliminado.nombre}, ya no participas. <br /> ¡Gracias por participar!`,
+          timer: 2200, // Duración de la alerta en milisegundos (en este caso, 2 segundos)
           allowOutsideClick: false,
           customClass: {
             title: "mi-clase-titulo",
@@ -109,12 +108,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //! Crear una lista de objetos Participante
   const nombresParticipantes = [
-    new Participante("Shere", true),
+    new Participante("Sheherezade", true),
     new Participante("Sergi", true),
     new Participante("Alex", true),
     new Participante("Sara", true),
-    new Participante("Moha", true),
-    new Participante("Adri", true),
+    new Participante("Mohammed", true),
+    new Participante("Adrià", true),
     new Participante("David", true),
     new Participante("Albert", true),
     new Participante("Thirza", true),

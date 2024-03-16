@@ -261,28 +261,6 @@ body {
   background-color: rgb(255, 145, 0);
 }
 
-.confeti:nth-child(16) {
-  left: 80%;
-  animation-delay: 0.5s;
-  background-color: rgb(0, 255, 145);
-}
-
-.confeti:nth-child(17) {
-  left: 85%;
-  animation-delay: 0.9s;
-  background-color: rgb(255, 0, 217);
-}
-.confeti:nth-child(18) {
-  left: 90%;
-  animation-delay: 0.3s;
-  background-color: rgb(234, 255, 0);
-}
-.confeti:nth-child(19) {
-  left: 95%;
-  animation-delay: 0.5s;
-  background-color: rgb(21, 255, 0);
-}
-
 @media screen and (max-width: 510px) {
   .title {
     transform: scale(0.5);
