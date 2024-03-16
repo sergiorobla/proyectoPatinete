@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
         Swal.fire({
           icon: "success",
-          title: `¡Enhorabuena ${ultimoParticipante.nombre}, <br /> has Ganado! <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div>`,
+          title: `¡Enhorabuena ${ultimoParticipante.nombre}, <br /> has Ganado! <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div>`,
           allowOutsideClick: false,
           customClass: {
             title: "mi-clase-titulo",
@@ -87,6 +87,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const elemento = document.createElement("div");
         elemento.textContent = eliminado.nombre;
         listaEliminados.appendChild(elemento);
+
+        // Mostrar una alerta indicando que el participante ha sido eliminado
+        Swal.fire({
+          title: `😢🥀 <br /> ${eliminado.nombre} ha sido eliminad@ <br /> Gracias por participar.`,
+          timer: 4000, // Duración de la alerta en milisegundos (en este caso, 2 segundos)
+          allowOutsideClick: false,
+          customClass: {
+            title: "mi-clase-titulo",
+          },
+        });
       });
     }
 
