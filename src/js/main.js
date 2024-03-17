@@ -55,7 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
           (participante) => participante.participacion
         );
         Swal.fire({
-          title: `<br /> ✨🏆✨ <br /> <br />¡Enhorabuena ${ultimoParticipante.nombre}! <br /> <br /> ¡Has Ganado! <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div> <div class="confeti"></div>`,
+          title: `
+          <div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div>
+          <br /> ✨🏆✨ <br /> <br />¡Enhorabuena ${ultimoParticipante.nombre}! <br /> <br /> ¡Has Ganado! `,
           allowOutsideClick: false,
           customClass: {
             title: "mi-clase-titulo",

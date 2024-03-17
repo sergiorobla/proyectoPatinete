@@ -166,62 +166,56 @@ body {
     transform: translateY(-90vh) rotate(0deg); /* Transformación inicial */
   }
   100% {
-    transform: translateY(10vh) rotate(360deg); /* Transformación final */
+    transform: translateY(54vh) rotate(360deg); /* Transformación final */
   }
 }
 
 /* Estilos individuales para cada confeti */
-.confeti:nth-child(1) {
-  left: 5%;
-  animation-delay: 0.2s;
-  background-color: #f00;
-}
-
 .confeti:nth-child(2) {
   left: 10%;
-  animation-delay: 0.4s;
-  background-color: rgb(0, 102, 255);
+  animation-delay: 0.1s;
+  background-color: rgb(255, 0, 0);
 }
 
 .confeti:nth-child(3) {
   left: 15%;
-  animation-delay: 0.6s;
+  animation-delay: 0.2s;
   background-color: rgb(0, 255, 55);
 }
 
 .confeti:nth-child(4) {
   left: 20%;
-  animation-delay: 0.3s;
+  animation-delay: 0.25s;
   background-color: rgb(255, 0, 179);
 }
 
 .confeti:nth-child(5) {
   left: 25%;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   background-color: rgb(234, 255, 0);
 }
 
 .confeti:nth-child(6) {
   left: 30%;
-  animation-delay: 0.7s;
+  animation-delay: 0.15s;
   background-color: rgb(255, 170, 0);
 }
 
 .confeti:nth-child(7) {
   left: 35%;
-  animation-delay: 0.9s;
+  animation-delay: 0.3s;
   background-color: rgb(0, 255, 247);
 }
 
 .confeti:nth-child(8) {
   left: 40%;
-  animation-delay: 0.1s;
+  animation-delay: 0.4s;
   background-color: rgb(187, 255, 0);
 }
 
 .confeti:nth-child(9) {
   left: 45%;
-  animation-delay: 0.3s;
+  animation-delay: 0.35s;
   background-color: rgb(195, 0, 255);
 }
 
@@ -233,26 +227,26 @@ body {
 
 .confeti:nth-child(11) {
   left: 55%;
-  animation-delay: 0.4s;
+  animation-delay: 0.45s;
   background-color: rgb(0, 26, 255);
 }
 
 .confeti:nth-child(12) {
   left: 60%;
-  animation-delay: 0.5s;
-  background-color: rgb(0, 255, 85);
+  animation-delay: 0.55s;
+  background-color: rgb(255, 247, 0);
 }
 
 .confeti:nth-child(13) {
   left: 65%;
-  animation-delay: 0.3s;
+  animation-delay: 0.32s;
   background-color: rgb(255, 0, 217);
 }
 
 .confeti:nth-child(14) {
   left: 70%;
-  animation-delay: 0.1s;
-  background-color: #f00;
+  animation-delay: 0.15s;
+  background-color: rgb(255, 0, 0);
 }
 
 .confeti:nth-child(15) {
@@ -260,7 +254,21 @@ body {
   animation-delay: 0.2s;
   background-color: rgb(255, 145, 0);
 }
-
+.confeti:nth-child(16) {
+  left: 80%;
+  animation-delay: 0.25s;
+  background-color: rgb(98, 255, 0);
+}
+.confeti:nth-child(17) {
+  left: 85%;
+  animation-delay: 0.3s;
+  background-color: rgb(255, 0, 0);
+}
+.confeti:nth-child(18) {
+  left: 90%;
+  animation-delay: 0.15s;
+  background-color: rgb(0, 0, 255);
+}
 @media screen and (max-width: 510px) {
   .title {
     transform: scale(0.5);
