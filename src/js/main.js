@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Swal.fire({
           title: `
           <div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div><div class="confeti"></div>
-          <br /> ✨🏆✨ <br /> <br />¡Enhorabuena ${ultimoParticipante.nombre}! <br /> <br /> ¡Has Ganado! `,
+          ✨🏆✨ <br /> <br />¡Enhorabuena ${ultimoParticipante.nombre}! <br /> <br /> ¡Has Ganado! `,
           allowOutsideClick: false,
           customClass: {
             title: "mi-clase-titulo",
