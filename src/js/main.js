@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Mostrar una alerta indicando que el participante ha sido eliminado
         Swal.fire({
-          title: `<br /> 😢🥀 <br /> <br /> ${eliminado.nombre}, ya no participas. <br /> ¡Gracias por participar!`,
+          title: `<br /> 😢🥀 <br /> <br /> ${eliminado.nombre}, ya no participas. <br /> ¡Gracias por presentarte!`,
           timer: 2200, // Duración de la alerta en milisegundos (en este caso, 2 segundos)
           allowOutsideClick: false,
           customClass: {
