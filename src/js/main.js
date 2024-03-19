@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Participante("Sergio", true),
     new Participante("Aitor", true),
     new Participante("Eric", true),
+    new Participante("Daniel", true),
   ];
 
   //! Crear una instancia de la clase Sorteo
